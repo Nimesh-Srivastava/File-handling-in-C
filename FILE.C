@@ -277,6 +277,6 @@ start:
 
 		default :
 			goto start;
-			//exit();
+			exit();
 	}
 }
