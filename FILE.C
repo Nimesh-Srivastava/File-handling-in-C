@@ -89,7 +89,7 @@ int encr_fil()
 		err(2);
 		return 1;
 	}
-	while(ch!=EOF)
+	while(ch!=EOF)					//encryption algorithm start
 	{
 		ch=fgetc(fp);
 		if(ch==EOF)
@@ -118,7 +118,7 @@ int encr_fil()
 			fputc(ch, fp_new);
 			u+=2;
 		}
-	}
+	}							//encryption algorithm end
 	fclose(fp);
 	fclose(fp_new);
 	fp = fopen(f_nam,"w");
